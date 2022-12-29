@@ -1,2 +1,9 @@
-# portfolio
-Danny Nguyen's professional portfolio
+# Danny Nguyen's Portfolio
+
+## Description
+
+## Installation
+
+## Usage
+
+## Screenshot
