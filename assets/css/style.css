@@ -1,6 +1,7 @@
 :root {
     --default-font-color: #f0f0f0;
     --default-font-family: 'SF Pro','Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, sans-serif;
+    --section-heading-size: 150%
 }
 
 * {
@@ -10,7 +11,7 @@
 }
 
 .container {
-    padding-top: 15%;
+    padding-top: 10%;
     padding-inline-start: 1rem;
     padding-inline-end: 1rem;
     margin-inline-start: auto;
@@ -21,6 +22,7 @@
 .profile {
     display: flex;
     margin-bottom: 5%;
+    justify-content: center;
 }
 
 .profile img {
@@ -33,7 +35,8 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    font-size: 135%;
+    font-size: 200%;
+    font-weight: 35;
     margin-left: 5%;
 }
 
@@ -65,4 +68,36 @@
 .navigation a {
     padding: 5px 10px;
     display: inline;
+}
+
+.content {
+    display: block;
+    margin-bottom: 5%;
+}
+
+.content h2 {
+    font-size: var(--section-heading-size);
+    font-weight: 25;
+    margin-bottom: 2%;
+}
+
+.content p {
+    text-align: justify;
+}
+
+.content article {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 1fr 2fr;
+    margin-bottom: 3%;
+}
+
+.content article h3 {
+    font-weight: 15;
+}
+
+.content figure {
+    display: block;
+    border-style: solid;
+    margin: 5%;
 }
