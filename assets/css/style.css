@@ -1,15 +1,18 @@
+/* declared variables */
 :root {
     --default-font-color: #f0f0f0;
     --default-font-family: 'SF Pro','Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, sans-serif;
-    --section-heading-size: 150%
+    --section-heading-size: 160%
 }
 
+/* applied background color, font family, and font color to entire page */
 * {
     background-color: black;
     font-family: var(--default-font-family);
     color: var(--default-font-color);
 }
 
+/* container to determine the entire page boundary */
 .container {
     padding-top: 10%;
     padding-inline-start: 1rem;
@@ -19,6 +22,7 @@
     max-width: 800px;
 }
 
+/* styling for the header profile image and name */
 .profile {
     display: flex;
     margin-bottom: 5%;
@@ -29,6 +33,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 10%;
 }
 
 .profile h1 {
@@ -48,6 +53,7 @@
     margin-left: 3%;
 }
 
+/* navigation bar position and style */
 .navigation {
     display: flex;
     justify-content: center;
@@ -68,8 +74,10 @@
 .navigation a {
     padding: 5px 10px;
     display: inline;
+    font-size: 85%;
 }
 
+/* content style for about, work, projects, and socials sections */
 .content {
     display: block;
     margin-bottom: 5%;
@@ -85,6 +93,7 @@
     text-align: justify;
 }
 
+/* content style for work section */
 .content article {
     display: grid;
     grid-template-columns: 20% 80%;
@@ -96,8 +105,22 @@
     font-weight: 15;
 }
 
-.content figure {
+.content-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 1fr;
+    margin-bottom: 5%;
+}
+
+.content-projects h2 {
+    font-size: var(--section-heading-size);
+    font-weight: 25;
+    margin-bottom: 2%;
+}
+
+.content-projects figure {
     display: block;
     border-style: solid;
     margin: 5%;
+    text-align: center;
 }
